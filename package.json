@@ -1,0 +1,39 @@
+{
+  "name": "flag",
+  "version": "2.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /flag/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihor-nechyporenko/flag.git"
+  },
+  "keywords": [],
+  "author": "Ihor Nechyporenko <nechyporenko.i@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://ihor-nechyporenko.github.io/flag",
+  "bugs": {
+    "url": "https://github.com/ihor-nechyporenko/flag/issues"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "gh-pages": "^5.0.0",
+    "modern-normalize": "^1.1.0",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.2",
+    "@parcel/packager-xml": "^2.8.2",
+    "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.8.2",
+    "@parcel/transformer-xml": "^2.8.2",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
